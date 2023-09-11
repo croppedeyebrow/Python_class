@@ -7,22 +7,25 @@
 
 
 total_case = int(input("테이트 케이스 총 횟수를 입력하세요 :  "))
-
+results = []
 
 for _ in range(total_case) :
     student = list(map(int,input("테스트에 참여한 학생 수를 입력하세요 : ").split()))
     N = student[0]
-        #score =student[1:]
-    total = sum(student[1:])
+    scores =student[1:]
+    total = sum(scores)
     score_average = total/ N
 
     count = 0
-    for score in student[1:] :
-            if score > score_average:
-                count +=1
+    for score in scores :
+        if score > score_average:
+            count +=1
 
     good_ratio =(count/N) * 100
-    print(f"평균을 넘은 학생들의 비율은 {good_ratio:.3f}% 입니다.")
+    results.append(good_ratio)
+
+for i, result in enumerate(results) :
+ print(f"평균을 넘은 학생들의 비율은 {result:.3f}% 입니다.")
 
 
 ############################
