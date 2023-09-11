@@ -77,11 +77,11 @@ list_all = [0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,"a","b","c","d","korea"]
 # # clear() : 모든 값을 삭제. 리스트 지우지 않음.
 # list_all.clear()
 # print(list_all)
-#
-#
-# del 리스트명[인덱스] : 해당 인덱스의 값을 지움.
-# del list_all[3]
-# print(list_all)
+
+
+#del 리스트명[인덱스] : 해당 인덱스의 값을 지움.
+del list_all[3]
+print(list_all)
 #
 #
 #
@@ -96,7 +96,7 @@ list_all = [0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,"a","b","c","d","korea"]
 
 # map(반환함수, 입력자료형), filter(반환함수, 입력자료형) 동작 확인
 # num = list(map(int,input("값 :").split))
-num = list(map(lambda e : int(e)*int(e), input("값 :").split()))
+# num = list(map(lambda e : int(e)*int(e), input("값 :").split()))
 # num = list(filter(lambda e:int(e) % 2 ==0, input("값 :").split()))
 # print(num)
 

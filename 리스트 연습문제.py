@@ -76,25 +76,25 @@
 # rejected = 0
 #
 # for seat in use_seat :
-#      if c_seat[seat] == 0:
-#         c_seat[seat] =1
+#      if c_seat[seat] == 1:
+#               rejected += 1
 #      else:
-#           rejected +=1
+#          c_seat[seat] =1
+#
 # print(f"거절 당한 손님의 수는 : {rejected} 입니다. ")
-
-
-
-
-
-#####################################
-
-
-#4번.
-# : Knuth-Morris-Pratt => KMP, Mirko-Slavko => MS
-
-upper_str = ""
-for e in input() :  #입력 받는 개수만큼 자동 순회
-    if e.isupper() : upper_str += e
-
-print(upper_str)
+#
+# # c_seat[seat] =1
+#
+#
+# #####################################
+#
+#
+# #4번.
+# # : Knuth-Morris-Pratt => KMP, Mirko-Slavko => MS
+#
+# upper_str = ""
+# for e in input() :  #입력 받는 개수만큼 자동 순회
+#     if e.isupper() : upper_str += e
+#
+# print(upper_str)
 
