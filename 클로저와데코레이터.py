@@ -12,10 +12,8 @@
 # print(c(1), c(2), c(3), c(4), c(5))
 
 
-
-
 #콜백
-#
+
 # import time
 # def opertaion(x,y,callback) :
 #     result = 0
@@ -31,6 +29,30 @@
 
 
 #데코레이터 : 이미 만들어져 있는 함수의 앞과 뒤에 기능을 추가 할 때 사용
+
+#첫번째 방법.
+
+from datetime import datetime
+def datetime_deco(func)  :
+    def decorated() :
+        print(datetime.now())
+        func()
+        print(datetime.now())
+    return  decorated
+
+@datetime_deco
+def for_sum() :
+    sum = 0
+    for i in range(1,100+1) :
+        sum +=i
+    print(sum)
+
+test= datetime_deco(for_sum)
+test()
+
+
+#두번째 방법.
+#
 from datetime import datetime
 def datetime_deco(func)  :
     def decorated() :
