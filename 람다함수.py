@@ -3,13 +3,11 @@
 # 람다 함수의 장점은 코드의 간결함, 메모리의 절약이라고 생각할 수 있습니다.
 # 컴파일러나 인터프리터가 해석가능하면 생략.
 
-# def add(a, b) :
-#     return  a + b
-#
-#
-# print(add(1,2))
-#
-# print((lambda a,b : a+b)(1,2))
+def add(a, b) :
+    return  a + b
+print(add(1,2))
+
+print((lambda a,b : a+b)(1,2))
 
 
 #함수의 매개변수로 함수 전달 하기.
@@ -21,7 +19,7 @@ def print_hello() :
     print(f"Hello^^")
 
 
-# call_times(print_hello)
+call_times(print_hello)
 
 
 # filter() 함수와 map()함수

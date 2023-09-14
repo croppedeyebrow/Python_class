@@ -15,7 +15,7 @@
 
 
 
-# 순차 검색
+#순차 검색
 # def search_list(a,x) :
 #     for i in range(len(a)) :
 #         if x == a[i] : return i
@@ -52,4 +52,4 @@
 #
 # profile("나희도",18, "python", "Java", "C", "C++", "REACT" )
 # profile("조세호",38, "python", "Java", "Swift" )
-# profile("유재석",48, "python", "Java", "C", "C++"
+# profile("유재석",48, "python", "Java", "C", "C++")
